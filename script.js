@@ -32,7 +32,7 @@ const words = {
   programming: ["java", "C++", "JavaScript", "HTML", "CSS", "Python"],
   movies: ["Spider Man", "Bat Man", "Red Notice", "Adventure", "grayman"],
   people: ["Mohammed", "Adam Smith", "Alexander", "Ghandi"],
-  countries: ["UAE", "Qatar", "Suadi Arebia", "Egypt", "Oman"]
+  countries: ["UAE", "Qatar", "Saudi Arabia", "Egypt", "Oman"]
 };
 
 
