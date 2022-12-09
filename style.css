@@ -282,7 +282,7 @@ hr {
 
 
 
-/* Add Media Queries to be responsive on mobile phones and tablates */
+/* Add Media Queries to be responsive on mobile phones and tablets */
 @media only screen and (max-width:768px) {
   .game-info {
     flex-direction: column;
