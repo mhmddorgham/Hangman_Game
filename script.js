@@ -7,6 +7,7 @@ let arrayLetters = Array.from(letters);
 
 //catch the letters div
 let LettersContainer = document.querySelector(".letters");
+// LettersContainer.style.cssText = "flex: 1; padding: 15px;text-align: center; display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; align-items: center;"
 
 //generate letters
 arrayLetters.forEach(letter => {
@@ -137,5 +138,53 @@ function Winner() {
   correctWord.style.cssText = "margin: 40px auto;text-align: center;font-size: 20px;font-weight: bold;"
   document.getElementById("win").play();
   overMsg.innerHTML = `Winner!`;
+  correctWord.innerHTML = `Correct Word is ${randomValue}`;
+}
+
+function wrongAttempt() {
+  overMsg.style.cssText = "margin: 50px auto;text-align: center;font-size: 60px;font-weight: bold; color: red; "
+  correctWord.style.cssText = "margin: 40px auto;text-align: center;font-size: 20px;font-weight: bold;"
+  document.getElementById("over").play();
+  overMsg.innerHTML = `Wrong!`;
+  correctWord.innerHTML = `Try Again`;
+}
+
+function CorrectAttempt() {
+  overMsg.style.cssText = "margin: 50px auto;text-align: center;font-size: 60px;font-weight: bold; color:green; "
+  correctWord.style.cssText = "margin: 40px auto;text-align: center;font-size: 20px;font-weight: bold;"
+  document.getElementById("win").play();
+  overMsg.innerHTML = `Correct!`;
+  correctWord.innerHTML = `Keep Going!`;
+}
+
+function FailWithMusic() {
+  overMsg.style.cssText = "margin: 50px auto;text-align: center;font-size: 60px;font-weight: bold; color: red; "
+  correctWord.style.cssText = "margin: 40px auto;text-align: center;font-size: 20px;font-weight: bold;"
+  document.getElementById("over").play();
+  overMsg.innerHTML = `Fail`;
+  correctWord.innerHTML = `Correct Word is ${randomValue}`;
+}
+
+function SuccessWithMusic() {
+  overMsg.style.cssText = "margin: 50px auto;text-align: center;font-size: 60px;font-weight: bold; color:green; "
+  correctWord.style.cssText = "margin: 40px auto;text-align: center;font-size: 20px;font-weight: bold;"
+  document.getElementById("win").play();
+  overMsg.innerHTML = `Sucess`;
+  correctWord.innerHTML = `Correct Word is ${randomValue}`;
+}
+
+function SuccessPopup() {
+  overMsg.style.cssText = "margin: 50px auto;text-align: center;font-size: 60px;font-weight: bold; color:green; "
+  correctWord.style.cssText = "margin: 40px auto;text-align: center;font-size: 20px;font-weight: bold;"
+  document.getElementById("win").play();
+  overMsg.innerHTML = `Sucess`;
+  correctWord.innerHTML = `Correct Word is ${randomValue}`;
+}
+
+function FailPopup() {
+  overMsg.style.cssText = "margin: 50px auto;text-align: center;font-size: 60px;font-weight: bold; color:green; "
+  correctWord.style.cssText = "margin: 40px auto;text-align: center;font-size: 20px;font-weight: bold;"
+  document.getElementById("win").play();
+  overMsg.innerHTML = `GameOver`;
   correctWord.innerHTML = `Correct Word is ${randomValue}`;
 }
