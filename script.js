@@ -29,7 +29,7 @@ arrayLetters.forEach(letter => {
 
 //Create an object called words:
 const words = {
-  programming: ["java", "C++", "JavaScript", "HTML", "CSS", "Python"],
+  programming: ["java", "CPP", "JavaScript", "HTML", "CSS", "Python"],
   movies: ["Spider Man", "Bat Man", "Red Notice", "Adventure", "grayman"],
   people: ["Mohammed", "Adam Smith", "Alexander", "Ghandi"],
   countries: ["UAE", "Qatar", "Saudi Arabia", "Egypt", "Oman"]
