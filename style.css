@@ -10,7 +10,9 @@ body {
 
 .container {
   margin: 20px auto;
-  width: 1000px;
+  width: 100%;
+  min-width: 300px;
+  max-width: 1000px;
 }
 
 .row {
@@ -44,7 +46,7 @@ hr {
   flex: 1;
   background-color: #f8f8f8;
   padding: 20px;
-  height: 324px;
+  min-height: 324px;
 }
 
 .hangman-draw .the-draw {
@@ -276,4 +278,28 @@ hr {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
+}
+
+
+
+/* Add Media Queries to be responsive on mobile phones and tablates */
+@media only screen and (max-width:768px) {
+  .game-info {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .game-info .category {
+    text-align: left;
+  }
+
+  .row {
+    flex-direction: column;
+  }
+
+  .letters .Letter-box {
+    width: 30px;
+    height: 30px;
+    font-size: 20px;
+  }
 }
